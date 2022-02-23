@@ -1,1 +1,26 @@
+# Python-Currency-Converter project workflow.
 
+name: Currency-Converter-Workflow
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on the push events but only for the main branch.
+  push:
+    branches: [ main ]
+
+  # Allows one to run the workflow manually from the actions tab.
+  workflow_dispatch:
+
+# A workflow is made-up of one or mare jobs that can run sequentially or in parallel.
+jobs:
+  code-lint-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout The Code
+        uses: actions/checkout@v2
+
+      - name: Run Super-Linter
+        uses: github/super-linter@v3
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
