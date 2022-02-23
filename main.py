@@ -1,6 +1,3 @@
-import typing
-
-
 def print_hello() -> None:
     """
     Print 'Hello' on the terminal.

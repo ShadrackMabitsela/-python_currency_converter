@@ -19,7 +19,7 @@ jobs:
       - name: Checkout The Code
         uses: actions/checkout@v2
 
-      - name: Run Super-Linter
+      - name: Lint The Project Codebase
         uses: github/super-linter@v4
         env:
           DEFAULT_BRANCH: main
