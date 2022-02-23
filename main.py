@@ -1,4 +1,4 @@
-from typing import *
+import typing
 
 
 def print_hello() -> None:
@@ -6,7 +6,8 @@ def print_hello() -> None:
     Print 'Hello' on the terminal.
     :return: None.
     """
-    print("Hello")
+    msg: str = "Hello"
+    print(msg)
     return None
 
 
