@@ -26,7 +26,7 @@ class CurrencyConverterApp:
             rely="0.45",
             width="200",
             x="0",
-            y="0"
+            y="0",
         )
         self.cmb_currencies_2 = ttk.Combobox(self.frm_main)
         self.cmb_currencies_2.configure(justify="left", values="val1")
@@ -38,7 +38,7 @@ class CurrencyConverterApp:
             rely="0.65",
             width="200",
             x="0",
-            y="0"
+            y="0",
         )
         self.entry_1 = tk.Entry(self.frm_main)
         self.entry_1.configure(
@@ -63,7 +63,10 @@ class CurrencyConverterApp:
         self.lbl_details.place(anchor="nw", height="100", width="370", x="0", y="0")
         self.lbl_date = ttk.Label(self.frm_main)
         self.lbl_date.configure(
-            background="#000000", foreground="#FFFFFF", justify="left", text="Test Text."
+            background="#000000",
+            foreground="#FFFFFF",
+            justify="left",
+            text="Test Text.",
         )
         self.lbl_date.place(
             anchor="nw", height="28", rely="0.3", width="370", x="0", y="0"
