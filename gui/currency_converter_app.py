@@ -58,7 +58,10 @@ class CurrencyConverterApp:
         )
         self.lbl_details = ttk.Label(self.frm_main)
         self.lbl_details.configure(
-            background="#000000", foreground="#FFFFFF", justify="left", text="Test Text."
+            background="#000000",
+            foreground="#FFFFFF",
+            justify="left",
+            text="Test Text.",
         )
         self.lbl_details.place(anchor="nw", height="100", width="370", x="0", y="0")
         self.lbl_date = ttk.Label(self.frm_main)
