@@ -9,13 +9,13 @@ on:
   # Allows one to run the workflow manually from the actions tab.
   workflow_dispatch:
 
-# A workflow is made-up of one or mare jobs
+# A workflow is made-up of one or more jobs
 # that can run sequentially or in parallel.
 jobs:
-  code-lint-check:
+  lint-the-project-codebase:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout The Code
+      - name: Checkout The Codebase
         uses: actions/checkout@v2
 
       - name: Lint The Project Codebase

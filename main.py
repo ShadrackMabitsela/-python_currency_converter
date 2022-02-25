@@ -1,12 +1,5 @@
-def print_hello() -> None:
-    """
-    Print 'Hello' on the terminal.
-    :return: None.
-    """
-    msg: str = "Hello"
-    print(msg)
-    return None
+from gui.currency_converter_app import CurrencyConverterApp
 
-
-if __name__ == "__main__":
-    print_hello()
+if __name__ == '__main__':
+    app = CurrencyConverterApp()
+    app.run()
