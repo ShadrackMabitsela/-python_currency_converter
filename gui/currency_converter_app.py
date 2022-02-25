@@ -85,7 +85,7 @@ class CurrencyConverterApp:
         self.tl_main_window.pack_propagate(0)
 
         # Main widget
-        self.mainwindow = self.tl_main_window
+        self.main_window = self.tl_main_window
 
     def run(self):
-        self.mainwindow.mainloop()
+        self.main_window.mainloop()
