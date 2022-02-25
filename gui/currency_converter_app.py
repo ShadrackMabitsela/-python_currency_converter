@@ -1,7 +1,8 @@
 import pathlib
-import pygubu
 import tkinter as tk
 import tkinter.ttk as ttk
+
+import pygubu
 
 PROJECT_PATH = pathlib.Path(__file__).parent
 PROJECT_UI = PROJECT_PATH / "newproject"
